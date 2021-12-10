@@ -156,7 +156,7 @@ class ElectricGraph:
         except Exception as e:
             print(e)
 
-        # 获取检修记录节点，检修机器——记录关系
+        # 获取线路记录节点，检修机器——记录关系
         try:
             line_str = ''
             for data in open(self.Line_path, encoding='utf-8'):

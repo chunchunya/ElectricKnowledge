@@ -24,7 +24,7 @@ class GetData:
             #print(str(re['source']), re['source_labels'], re['source_attrs'])
             nodes[str(re['source'])] = {'labels': re['source_labels'][0], 'attrs': re['source_attrs']}
             nodes[str(re['target'])] = {'labels': re['target_labels'][0], 'attrs': re['target_attrs']}
-            links[str(re['link'])] = {'type': re['r_type'][0], 'attrs': re['r_attrs'],
+            links[str(re['link'])] = {'type': re['r_type'], 'attrs': re['r_attrs'],
                                       'source': str(re['source']), 'target': str(re['target'])}
         return nodes, links
 
